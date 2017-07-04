@@ -1,0 +1,146 @@
+/*
+
+    COLORS
+
+    Pink   : #ffdddd
+    Purple : #ddddff
+    Green  : #ddffdd
+    Blue   : #ddffff
+    Yellow : #ffffdd
+
+    BREAKPOINTS
+
+    600px
+    1100px
+
+*/
+
+body {
+    font-family: Palatino, Times, serif;
+    background-color: #ddffdd;
+    margin: 20px;
+    font-size: 14px;
+    line-height: 1.6;
+}
+
+ul {
+    padding-left: 20px;
+    margin-top: 0;
+}
+
+h1, h2, h3 {
+    color: #009999;
+}
+
+h2, h3 {
+    margin-bottom: 0;
+}
+
+a {
+    font-weight: bold;
+    color: red;
+    text-decoration: none;
+}
+
+a:hover {
+    color: blue;
+}
+
+header {
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #ddddff;
+}
+
+#logo {
+    text-align: center;
+
+}
+
+#site_container {
+    padding: 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    background: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+#main_nav {
+    text-align: center;
+}
+
+#main_nav a {
+    display: block;
+    padding: 10px 2%;
+    background: #ffdddd;
+    margin-bottom: 5px;
+    border-radius: 5px;
+}
+
+#main_nav a:hover {
+    background: #ddddff;
+}
+
+#sidebar_content div {
+    background-color: lightyellow;
+    padding: 25px;
+    margin-top: 25px;
+}
+
+#main_content {
+    background-color: aliceblue;
+    padding: 25px;
+    margin-top: 25px;
+}
+
+#site_footer {
+    background-color: #FADEB0;
+    text-align: center;
+    padding: 25px;
+    margin-top: 25px;
+}
+
+#site_footer nav a {
+    margin: .7em;
+}
+
+@media screen and ( min-width: 600px ) {
+    #main_nav a {
+                display: inline-block;
+                padding: 10px 2%;
+                background: #ffdddd;
+                margin-bottom: 5px;
+                width: 28%;
+              }
+
+    #sidebar_content {
+                margin: 0;
+                display: flex;
+                flex-direction: row;
+                background-color: #ffffdd;
+              }
+
+    #sidebar_content div {
+                  margin: 0 1em;
+                  padding: 1em;
+                }
+              }
+
+
+@media screen and ( min-width: 1100px ) {
+
+      #main_content div p {
+                  margin-right: 150px;
+      }
+
+      #main_content div ul {
+                    
+      }
+
+      #main_content {
+                  display: flex;
+                  flex-direction: row;
+                  background-color: aliceblue;
+                  }
+  }
